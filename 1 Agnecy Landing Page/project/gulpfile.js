@@ -82,7 +82,8 @@ gulp.task('svgSpriteBuild', function () {
 		.pipe(svgSprite({
 			mode: {
 				symbol: {
-					sprite: "../sprite.svg",
+//					sprite: "../sprite.svg",
+					sprite: "../-sprite.html",
 					render: {
 						scss: {
 							dest:'../../../../../dev/sass/my_style_components/_sprite.scss',
@@ -92,7 +93,8 @@ gulp.task('svgSpriteBuild', function () {
 				}
 			}
 		}))
-		.pipe(gulp.dest('build/img/icons/svg/'))
+		.pipe(gulp.dest('dev/html/includes/'))
+//		.pipe(gulp.dest('build/img/icons/svg/'))
     .pipe(reload({stream:true}));
 });
 

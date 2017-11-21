@@ -1,4 +1,4 @@
-$('.sticky-header .menuBtn .icon-Menu').click(openMenu);
+$('.sticky-header .menuBtn .icon-menu').click(openMenu);
 
 function openMenu(){
     $menuStat = parseInt($('.sticky-header .menu').css('width'), 10);
@@ -28,7 +28,7 @@ function openMenuFix(){
 
 $(function(){
     $(window).scroll(function() {
-        $paddingT = parseInt($('header').css('padding-top'), 10);
+        $paddingT = parseInt($('header .headerWrap').css('padding-top'), 10);
         if($(this).scrollTop() >= $paddingT) {
             $('header .sticky-header').addClass('sticked');
         }

@@ -5,11 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Agnecy Landing Page</title>
 	<link type="text/css" rel="stylesheet" href="css/basestyle.css"  media="screen,projection"/>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script type="text/javascript" src="js/svg4everybody.js"></script>
+	<script src="js/svg4everybody.legacy.js"></script>
 </head>
 <body>
+   <!--------SVG start-------->
+    <div id="svgSprite">
+        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M6 15h12a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zm-1-4v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1zm0-5v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1z" opacity=".75"/></symbol></svg>
+    </div>
+   <!--------SVG end-------->
 
 	<!--------header start-------->
-<header class="wrap lightGreyBg">
+<header class="lightGreyBg">
+   <div class="headerWrap wrap">
     <div class="sticky-header">
         <nav class="menu">
             <ul>
@@ -20,17 +29,24 @@
             </ul>
         </nav>
         <div class="menuBtn clearfix">
-            <svg class="icon icon-Menu">
-                <use xlink:href="img/icons/svg/sprite.svg#Menu"></use>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-menu">
+                <use xlink:href="#menu"></use>
             </svg>
         </div>
     </div>
+   </div> 
 </header>
 <!--------header end---------->
-<div style="height: 5000px; background-color: cornflowerblue;"> </div>
+	<!--------block1 start-------->
+<div class="block1 lightGreyBg">
+    <div class="block1Wrap wrap flw">
+        <div class="contactBl w12-f0 w6-f640"></div>
+        <div class="videoBl w12-f0 w6-f640"></div>
+    </div>
+</div>
+<!--------block1 end-------->
 	
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="js/svg4everybody.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>	
 </body>
 </html>

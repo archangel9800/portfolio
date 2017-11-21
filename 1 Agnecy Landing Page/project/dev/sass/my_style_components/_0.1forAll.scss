@@ -1,4 +1,14 @@
+@font-face {
+        font-family: opensans;
+        /* Имя шрифта */
+        src: url(../fonts/opensans/opensans.ttf);
+        /* Путь к файлу со шрифтом */
+}
+* {
+  font-family:inherit;
+}
 body {
+    font-family: opensans;
     margin: 0;
 }
 .lightGreyBg{
@@ -25,4 +35,7 @@ body {
 .clearfix:after {
     content: "";
     clear: both;
+}
+#svgSprite{
+    display: none;
 }
