@@ -1,5 +1,7 @@
 header {
     width: 100%;
+    position: relative;
+    z-index: 1;
     .headerWrap {
         width: 100%;
         max-width: 1282px;

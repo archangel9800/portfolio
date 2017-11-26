@@ -86,7 +86,7 @@ gulp.task('svgSpriteBuild', function () {
 					sprite: "../-sprite.html",
 					render: {
 						scss: {
-							dest:'../../../../../dev/sass/my_style_components/_sprite.scss',
+							dest:'../../../../dev/sass/my_style_components/_sprite.scss',
 							template: "./dev/sass/my_style_components/_sprite_template.scss"
 						}
 					}

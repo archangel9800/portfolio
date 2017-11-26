@@ -1,35 +1,45 @@
-.block1{
+.block1 {
     width: 100%;
-    .block1Wrap{
-            padding-top: 25px;
-            padding-bottom: 35px;
+    .block1Wrap {
+        padding-top: 25px;
+        padding-bottom: 35px;
         @media only screen and (min-width: 640px) {
             padding-top: 75px;
-            padding-bottom: 111px;
+            padding-bottom: 122px;
         }
-        .contactBl{
-            h2{
+        .contactBl {
+            h2 {
                 text-transform: uppercase;
                 font-size: 35px;
                 font-family: opensansEB;
                 margin-bottom: 15px;
+                word-wrap: break-word;
                 @media only screen and (min-width: 640px) {
                     font-size: 60px;
                     margin-bottom: 37px;
                 }
             }
-            p{
+            p {
                 margin-bottom: 20px;
                 @media only screen and (min-width: 640px) {
                     margin-bottom: 60px;
                 }
             }
-            .contactBtn{
+            .contactBtn {
                 width: 227px;
                 background-color: rgb(255, 45, 45);
                 border-radius: 5px;
-                a{
-                    padding: 18px 5px 18px 5px;
+                margin-bottom: 20px;
+                border: 2px solid transparent;
+                &:hover{
+                 background-color: transparent; 
+                 border: 2px solid rgb(255, 45, 45);
+                }
+                &:hover a{
+                        color: black;
+                    }
+                a {
+                    padding: 16px 3px 16px 3px;
                     display: block;
                     font-size: 19px;
                     text-decoration: none;
@@ -40,6 +50,46 @@
                 }
             }
         }
-        
+        .videoBl {
+            padding-top: 10px;
+            @media only screen and (min-width: 640px) {
+                padding-top: 0;
+            }
+            .video-block {
+                box-shadow: 0px 0px 73px 0px rgba(0, 0, 0, 0.29);
+                width: 100%;
+                max-width: none;
+                    @media only screen and (min-width: 640px) {
+                    width: 90%;
+                    max-width: 550px;
+                }
+                .vid_relative {
+                    width: 100%;
+                    height: 0;
+                    position: relative;
+                    margin: 0;
+                    padding: 0 0 60% 0;
+                    overflow: hidden;
+                    .vid_absolute {
+                        margin: 0;
+                        padding: 0;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: 0;
+                        .video {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                    }
+                }
+            
+            }
+        }
     }
 }
+
+
